@@ -14,7 +14,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color:#e4e4e4;
+  background-color:#FFD180;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -77,7 +77,10 @@ body {
 }
 
 .navbar {
-	background-color:#1c4e89;
+	background-color:#263238;
+}
+ul.nav li a{
+	color:#CFD8DC;
 }
 
 a.navbar-brand {
@@ -117,5 +120,5 @@ snap-drawers,
 	top:52px;
 }
 snap-content{
-	background-color:#313739;
+	background-color:#607D8B;
 }
