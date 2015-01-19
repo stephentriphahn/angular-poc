@@ -9,15 +9,15 @@
  * Main module of the application.
  */
 angular
-  .module('reportlistApp', [
-	 'nav',
-	 'snap',
+  .module('reportlistApp', [	 
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+	 'nav',
+	 'reportlist'
   ])
   .config(function ($routeProvider) {
     $routeProvider

@@ -99,6 +99,9 @@ a.navbar-brand {
 .navbar-default .navbar-nav > li > a {
 	color:white;
 }
+.navbar-default .navbar-nav > li > a:hover{
+	color:gray;
+}
 
 button.snap-button {
 	position: absolute;
@@ -107,9 +110,6 @@ button.snap-button {
 }
 
 
-navbar-collapse.collapse.in {
-	z-index: 99999;
-}
 snap-content,
 [snap\:content],
 [snap-content],
@@ -127,8 +127,9 @@ snap-drawers,
 .snap-drawers,
 .snap-content{
 	position:absolute;
-	top:52px;
+	top:50px;
 }
 snap-content{
 	background-color:#e4e4e4;
+	z-index: 555;
 }
