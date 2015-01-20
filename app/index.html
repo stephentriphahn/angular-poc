@@ -12,6 +12,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+	 <link rel="stylesheet" href="styles/side-menu.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -22,7 +23,46 @@
 
     <!-- Add your site or application content here -->
     <div izenda-navbar></div>
-	 <div izenda-reportlist></div>
+	
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#">Start Bootstrap</a>
+            </li>
+            <li><a href="#">Dashboard</a>
+            </li>
+            <li><a href="#">Shortcuts</a>
+            </li>
+            <li><a href="#">Overview</a>
+            </li>
+            <li><a href="#">Events</a>
+            </li>
+            <li><a href="#">About</a>
+            </li>
+            <li><a href="#">Services</a>
+            </li>
+            <li><a href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+        <div class="content-header">
+            <h1>
+                <a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-th-list"></i></a>
+            </h1>
+        </div>
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+            <div izenda-reportlist></div>
+        </div>
+    </div>
+</div>
+		
+
+	 
+	
 	 <div ng-view=""></div>
 		
 
@@ -77,8 +117,11 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
 		  <script src="scripts/nav.js"></script>
 		  <script src="scripts/izenda-reportlist.js"></script>
+		  <script src="scripts/side-menu.js"></script>
         <!-- endbuild -->
 </body>
 </html>

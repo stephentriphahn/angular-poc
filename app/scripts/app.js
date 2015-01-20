@@ -32,4 +32,21 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .directive('izendaMenu', function(){
+		return{
+			restrict: 'AE',
+			tmeplateUrl: '..views/izenda-menu.html',
+			controller: function(){
+				this.tab;
+		
+				this.selectTab = function(setTab){
+					this.tab = setTab;
+				}
+				this.isSelected = function(check){
+					return this.tabs === check;
+				}
+			},
+			controllerAs: 'menu'
+		};
+	});
