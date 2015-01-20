@@ -8,10 +8,10 @@
  * Controller of the reportlistApp
  */
 angular.module('reportlistApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function () {
+		this.open = false;
+		
+		this.showOptions = function(){
+			this.open = !this.open;
+		}
   });

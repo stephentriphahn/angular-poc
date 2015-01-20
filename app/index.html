@@ -24,35 +24,26 @@
     <!-- Add your site or application content here -->
     <div izenda-navbar></div>
 	
-<div id="wrapper">
+<div id="wrapper" ng-controller="MainCtrl as main">
+<!--put somewhere useful! the collapse button for responsive side menu-->
+<a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-th-list"></i></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <li class="sidebar-brand"><a href="#">Start Bootstrap</a>
+            <li><button ng-click="main.showOptions()">New</button></li>
+					<ul ng-show="main.open" class="sub-menu"><li>Report</li>
+					<li>Dashboard</li>
+					<li>Instant Report</li></ul>
             </li>
-            <li><a href="#">Dashboard</a>
+            <li><a href="#">Reports</a>
             </li>
-            <li><a href="#">Shortcuts</a>
-            </li>
-            <li><a href="#">Overview</a>
-            </li>
-            <li><a href="#">Events</a>
-            </li>
-            <li><a href="#">About</a>
-            </li>
-            <li><a href="#">Services</a>
-            </li>
-            <li><a href="#">Contact</a>
+            <li><a href="#">Dashboards</a>
             </li>
         </ul>
     </div>
     
     <!-- Page content -->
     <div id="page-content-wrapper">
-        <div class="content-header">
-            <h1>
-                <a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-th-list"></i></a>
-            </h1>
-        </div>
+        
         <!-- Keep all page content within the page-content inset div! -->
         <div class="page-content inset">
             <div izenda-reportlist></div>
