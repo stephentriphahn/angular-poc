@@ -29,10 +29,12 @@
 <a id="menu-toggle" href="#" class="btn btn-default"><i class="glyphicon glyphicon-th-list"></i></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <li><button ng-click="main.showOptions()">New</button></li>
-					<ul ng-show="main.open" class="sub-menu"><li>Report</li>
-					<li>Dashboard</li>
-					<li>Instant Report</li></ul>
+            <li ><a class="btn btn-primary new-button" id="new-button" ng-click="main.showOptions()">New  <span class="caret"></span></a></li>
+					<ul ng-cloak ng-show="main.open" class="sub-menu">
+						<li>Report</li>
+						<li>Dashboard</li>
+						<li>Instant Report</li>
+					</ul>
             </li>
             <li><a href="#">Reports</a>
             </li>
